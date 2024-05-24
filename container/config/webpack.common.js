@@ -17,6 +17,7 @@ module.exports = {
     ],
   },
   plugins: [
+    // This plugin will generate an HTML5 file that includes all webpack bundles in the body using script tags
     new HtmlWebpackPlugin({
       template: "./public/index.html",
     }),
