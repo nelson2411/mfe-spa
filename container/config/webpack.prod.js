@@ -10,6 +10,7 @@ const prodConfig = {
   mode: "production",
   output: {
     filename: "[name].[contenthash].js", // contenthash is used to cache the file
+    publicPath: "/container/latest/", // This is the path where the files will be available
   },
   plugins: [
     new ModuleFederationPlugin({
