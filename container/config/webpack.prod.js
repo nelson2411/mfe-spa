@@ -17,7 +17,7 @@ const prodConfig = {
       name: "container", // This is not strictly necessary, but it's a good practice to set it
       remotes: {
         // The key is the name of the remote, the value is the name of the remote and the path to the remoteEntry file
-        marketing: `marketing@${domain}/marketing/remoteEntry.js`,
+        marketing: `marketing@${domain}/marketing/latest/remoteEntry.js`,
       },
       shared: packageJson.dependencies,
     }),
