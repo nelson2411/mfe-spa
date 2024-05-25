@@ -5,7 +5,10 @@ const App = () => {
   return (
     <div>
       <h1>Container</h1>
-      <p>Header</p>
+      <p>
+        I'm baby cliche franzen normcore, tumeric tumblr fashion axe vice raw
+        denim banh mi DSA church-key.
+      </p>
       <hr />
       <MarketingApp />
     </div>
