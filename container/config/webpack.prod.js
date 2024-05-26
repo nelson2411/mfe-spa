@@ -19,6 +19,7 @@ const prodConfig = {
         // The key is the name of the remote, the value is the name of the remote and the path to the remoteEntry file
         marketing: `marketing@${domain}/marketing/latest/remoteEntry.js`,
         auth: `auth@${domain}/auth/latest/remoteEntry.js`,
+        dashboard: `dashboard@${domain}/dashboard/latest/remoteEntry.js`,
       },
       shared: packageJson.dependencies,
     }),
