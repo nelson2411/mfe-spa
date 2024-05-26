@@ -6,10 +6,10 @@ const packageJson = require("../package.json")
 const devConfig = {
   mode: "development",
   output: {
-    publicPath: "http://localhost:8081/",
+    publicPath: "http://localhost:8082/",
   },
   devServer: {
-    port: 8081,
+    port: 8082,
     historyApiFallback: {
       // This is necessary to make sure the routes work correctly
       index: "/index.html",
@@ -17,10 +17,10 @@ const devConfig = {
   },
   plugins: [
     new ModuleFederationPlugin({
-      name: "marketing",
+      name: "auth",
       filename: "remoteEntry.js",
       exposes: {
-        "./MarketingApp": "./src/bootstrap",
+        "./AuthApp": "./src/bootstrap",
       },
       shared: packageJson.dependencies, // Share the dependencies from the package.json
     }),
